@@ -60,7 +60,7 @@ public class CoreService {
 		return account.getIsBlocked();
 	}
 	
-	public TransferStatus Deposit(double amount,  Account account) {
+	public TransferStatus deposit(double amount,  Account account) {
     
 	   double newBalanace = account.getBalance()+amount;
 	   account.setBalance(newBalanace);
